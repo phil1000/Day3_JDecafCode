@@ -1,0 +1,16 @@
+// Simple string manipulation program
+
+print("This program reads a string and then prints out a palindrome");
+print("\nPlease enter your string ... pronto\t");
+
+String inputStr = readLine();
+String outputStr = inputStr;
+int inputLength = inputStr.length();
+int i;
+
+for (i=0; i<inputLength; i++) {
+	outputStr = outputStr + inputStr.charAt(inputLength - (i+1));
+}
+
+print(outputStr);
+print("** end of string **");

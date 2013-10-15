@@ -1,0 +1,21 @@
+// Simple string manipulation program
+
+print("This program reads a number of words separated by a space from a user and outputs each word on its own line");
+print("\nPlease enter the string please and please terminate the string with a space\t");
+
+String inputStr = readLine();
+int inputLength = inputStr.length();
+int eCount=0;
+int i;
+String outputStr="";
+
+for (i=0; i<inputLength; i++) {
+	
+	if (inputStr.charAt(i) != ' ') {
+		outputStr=outputStr + inputStr.charAt(i);
+	}
+	else {
+		print(outputStr + "\n");
+		outputStr="";
+	}
+}

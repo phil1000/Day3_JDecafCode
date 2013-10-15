@@ -1,0 +1,32 @@
+// Simple string manipulation program
+
+print("This program reads a number entered as text, converts it to a number and then prints half of it");
+print("\nPlease enter your number using commas and decimals as required\t");
+
+String inputStr = readLine();
+int inputLength = inputStr.length();
+int i;
+double outputNumber=0;
+String wholeNumber="";
+String decimalNumber="";
+
+for (i=0; i<inputLength; i++) {
+
+	while (inputStr.charAt(inputLength(i)) != '.') {
+		// create the whole number part, removing commas
+		if (inputStr.charAt(inputLength(i)) != ',') {
+			wholeNumber=wholeNumber + inputStr.charAt(inputLength(i);
+			i++;
+		}
+		else {
+			i++;
+		}
+	}
+	
+	while ( (inputStr.charAt(inputLength(i)) != ',') && (inputStr.charAt(inputLength(i)) != '.') ) {
+		wholeNumber=wholeNumber + inputStr.charAt(inputLength(i);
+	}
+	outputStr = outputStr + inputStr.charAt(inputLength - (i+1));
+}
+
+print(outputNumber);
