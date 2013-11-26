@@ -1,0 +1,14 @@
+// Simple string manipulation program
+
+print("This program reads text from a user and outputs their input but one character on a line at a time");
+print("\nPlease enter the string please \t");
+
+String inputStr = readLine();
+int inputLength = inputStr.length();
+int eCount=0;
+int i;
+
+for (i=0; i<inputLength; i++) {
+	// n.b. only use one apostrophe for characters - a string assumes a string end character
+	print(inputStr.charAt(i) + "\n");
+}

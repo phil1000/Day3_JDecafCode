@@ -1,0 +1,46 @@
+// Simple calculator program
+
+print("This is a simple program that takes in two numbers and then allows you to choose a calculation");
+print("\nPlease enter the first number, an Integer please \t");
+int num1 = readInt();
+
+print("\nPlease enter the second number, an Integer please \t");
+int num2 = readInt();
+
+print("\nNow enter your required calculation");
+print("\nFor Addition Type 1\t");
+print("\nFor Subtraction Type 2\t");
+print("\nFor Multiplication Type 3\t");
+print("\nFor Division Type 4\t");
+
+int calcChoice = readInt();
+String strCalcChoice = "";
+
+int output = 0;
+
+switch (calcChoice)
+{ 
+	case 1:
+		output = num1+num2;
+		strCalcChoice = "Addition";
+		break;
+	case 2:
+		output = num1-num2;
+		strCalcChoice = "Subtraction";
+		break;
+	case 3:
+		output = num1*num2;
+		strCalcChoice = "Multiplication";
+		break;
+	case 4:
+		output = num1/num2;
+		strCalcChoice = "Division";
+		break;
+	default:
+		output = 0;
+		break;
+}
+
+print("\nThe first number was: " + num1 + " and second number was: " + num2);
+print("\nThe calculation chosen was " + strCalcChoice);
+print("\nThe result is " + output);
